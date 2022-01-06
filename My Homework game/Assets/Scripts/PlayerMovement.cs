@@ -8,14 +8,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float Speed;
     [SerializeField] private CharacterController controller;
 
-    //private Vector3 _direction;
+    /*
+     public bool isGrounded;
 
-    void Start()
+    void OnCollisionEnter()
     {
-
+        isGrounded = true;
     }
+     
+     */
 
-    // Update is called once per frame
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
@@ -23,6 +25,15 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * Speed * Time.deltaTime);
+
+        /*
+         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            isGrounded = false;
+            GetComponent<Rigidbody>().AddForce(new Vector3(0, 400, 0));
+        }
+         */
+
 
         /*_direction.x = Input.GetAxis("Horizontal");
         _direction.z = Input.GetAxis("Vertical");

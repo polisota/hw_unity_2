@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
-    [SerializeField] private float Damage;
-    [SerializeField] private float DamageAdditional;
-    [SerializeField] private float TimeC;
+    [SerializeField] private int Damage;
+    [SerializeField] private int DamageAdditional;
+    [SerializeField] private int TimeC;
 
     private float _currentTimeIn;
 
@@ -20,8 +20,8 @@ public class Trap : MonoBehaviour
             
             
             var hc = other.GetComponent<HealthController>();
-            hc.CurrentHealth -= Damage;
-            Debug.Log(hc.CurrentHealth);
+            hc.levelHealth -= Damage;
+            Debug.Log(hc.levelHealth);
             Destroy(gameObject);
         }
     }
@@ -34,8 +34,8 @@ public class Trap : MonoBehaviour
             if (_currentTimeIn >= TimeC)
             {
                 var hc = other.GetComponent<HealthController>();
-                hc.CurrentHealth -= DamageAdditional;
-                Debug.Log(hc.CurrentHealth);
+                hc.levelHealth -= DamageAdditional;
+                Debug.Log(hc.levelHealth);
                 _currentTimeIn = 0;
             }
         }
