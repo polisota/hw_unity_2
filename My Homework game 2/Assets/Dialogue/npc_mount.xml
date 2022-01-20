@@ -1,0 +1,58 @@
+<dialogue>
+	<node>
+		<npctext> ..... </npctext>
+		<answers>
+			<answer tonode = "1"> <text> Отдай инструменты! Ты похож на вора. </text> </answer>
+			<answer tonode = "2"> <text> Верни Саске!!! </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Я не вор. Я ученый. Провожу тут свои исследования. </npctext>
+		<answers>
+			<answer tonode = "4"> <text> .... Просто отдай мне инструменты. </text> </answer>
+			<answer tonode = "3"> <text> Гуси с шаринганами твоя работа? </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Что? </npctext>
+		<answers>
+			<answer tonode = "4"> <text> .... Просто отдай мне инструменты. </text> </answer>
+			<answer tonode = "3"> <text> Гуси с шаринганами твоя работа? </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Это не гуси. Это Утихи. </npctext>
+		<answers>
+			<answer tonode = "4"> <text> .... Просто отдай мне инструменты. </text> </answer>
+			<answer tonode = "0"> <text> А, тогда все встало на свои места. </text> <dialend>true</dialend> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Зачем они тебе? </npctext>
+		<answers>
+			<answer tonode = "5"> <text> Строить мост. </text> </answer>
+			<answer tonode = "7"> <text> Меня попросили принести. </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Просто пройди по воде. Если отстанешь, я тебя научу. </npctext>
+		<answers>
+			<answer tonode = "6"> <text> Ладно, главное результат. </text> </answer>
+			<answer tonode = "0"> <text> Нет, я не из этих. </text> <dialend>true</dialend> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Подойди к моему помощнику, он все сделает. </npctext>
+		<answers>
+			<answer tonode = "0"> <text> Ооокей. </text> <dialend>true</dialend> </answer>
+			<answer tonode = "7"> <text> Я передумал. Отдай инструменты! </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Ну, раз ты настаиваешь... Они в роще позади меня, забирай, раз такой смелый. </npctext>
+		<answers>
+			<answer tonode = "0"> <text> Не недооценивай меня! </text> <dialend>true</dialend> </answer>
+			<answer tonode = "0"> <text> Не смелый, но заберу. </text> <dialend>true</dialend> </answer>
+		</answers>
+	</node>
+</dialogue>

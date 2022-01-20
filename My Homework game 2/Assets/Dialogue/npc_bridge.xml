@@ -1,0 +1,30 @@
+<dialogue>
+	<node>
+		<npctext> Привет, у меня есть просьба к тебе. </npctext>
+		<answers>
+			<answer tonode = "1"> <text> Какая? </text> </answer>
+			<answer tonode = "2"> <text> Я спешу. </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Я строю мост, но мои инструменты украли. Верни их. </npctext>
+		<answers>
+			<answer tonode = "3"> <text> Хорошо. </text> </answer>
+			<answer tonode = "3"> <text> С чего мне начать? </text> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Ты не сможешь пройти, пока я не закончу здесь. </npctext>
+		<answers>
+			<answer tonode = "1"> <text> Что я должен сделать? </text> </answer>
+			<answer tonode = "0"> <text> Я найду другой способ. </text> <dialend>true</dialend> </answer>
+		</answers>
+	</node>
+	<node>
+		<npctext> Спасибо! Начни с обыска скал, вор мог затаиться там. </npctext>
+		<answers>
+			<answer tonode="0"> <text> Хорошо, я займусь этим. </text> <dialend>true</dialend> </answer>
+			<answer tonode="0"> <text> Гемор, но сделаю. </text> <dialend>true</dialend> </answer>
+		</answers>
+	</node>
+</dialogue>

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2818124189360281473}
   - component: {fileID: 4610369041410619554}
   - component: {fileID: 1039204138399363172}
-  - component: {fileID: 940189856280415434}
   m_Layer: 0
   m_Name: apple2spawn
   m_TagString: Untagged
@@ -140,25 +139,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.9000025, y: 9.070001, z: 0.20000008}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &940189856280415434
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 924595258094098898}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ee29f58df1caff04692bd6f92a12a607, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3598548997140709856
 GameObject:
   m_ObjectHideFlags: 0
